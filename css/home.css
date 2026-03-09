@@ -23,13 +23,27 @@ a:active {
     text-decoration: none;
 }
 
+
 header {
-    /*background-color: red;*/
-
-    flex: 0 0 auto;    
+    flex: 0 0 auto;
     padding: 0.2rem 2rem;
-
-    /*border-bottom: 0.4rem black solid;*/
+    position: relative;
+    display: inline-block;
+    color: white;    
+}
+header::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: hsl(186, 74%, 46%);
+    transform: rotate(-0.5deg) scale(1.05) translate(0, -0.5rem);
+    transform-origin: center;
+    z-index: -1;
+}
+header h1 {
+    font-size: 3rem;
+    width: fit-content;
+    /*border-bottom: 0.25rem white solid;*/
 }
 
 .buttons {
@@ -48,17 +62,20 @@ header {
 }
 
 .buttons > div a {
-    background-color: rgb(201, 201, 201);
+    background: hsl(274, 40%, 45%);
     text-align: center;
     padding: 0.75rem;
     border-radius: 0.4rem;
     white-space: nowrap;
+    color: white;
+    transition: all 0.1s ease-in;
+}
+.buttons > div a:hover {
+    background: hsl(274, 75%, 65%);
+    transform: scale(1.03);
+    transition: all 0.05s ease-out;
 }
 
-
-header h1 {
-    font-size: 3rem;
-}
 
 main {
     /*background-color: green;*/
@@ -70,11 +87,13 @@ main {
     gap: 1rem;
 }
 main h2 {
-    padding: 1.2rem 0 0.6rem 0;
-    margin: 0;
+    padding: 1.2rem 0 0 0;
+    margin: 0 0 0.6rem 0;
+    border-bottom: 0.15rem rgb(0, 0, 0) solid;
 }
 main p {
     padding: 0.3rem 0 0.15rem 0;
+    text-indent: 1.2rem;
     margin: 0;
 }
 main .extra-pad {
@@ -85,19 +104,6 @@ main iframe {
     height: 18rem;
 }
 
-footer {
-    height: auto;
-    width: 100%;
-    flex: 0 0 auto;
-    padding: 2rem 1rem;
-    box-sizing: border-box;
-    background-color: rgb(188, 188, 188);
-}
-footer > * {
-    text-align: center;
-    width: 100%;
-    display: block;
-}
 
 .hidden {
     opacity: 0.1;
@@ -106,4 +112,47 @@ footer > * {
 .hidden:hover {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+}
+
+
+.button-list {
+    list-style-type: none;
+    padding: 0.6rem 0 0.4rem 0;
+    margin: 0;
+}
+
+.button-list > *::before {
+    content: '⭐ ';
+    text-shadow: 0.5px 0.5px 2px black;
+}
+.button-list > *:hover::before {
+    content: '🌟 ';
+}
+.button-list > * {
+    padding: 0.2rem 0.5rem;
+}
+.button-list > * a {
+    text-decoration: underline;
+    color: black;
+}
+.button-list > * a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+
+footer {
+    margin-top: 1rem;
+    height: auto;
+    width: 100%;
+    flex: 0 0 auto;
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+    background: hsl(134, 64%, 26%);
+    color: white;
+}
+footer > * {
+    text-align: center;
+    width: 100%;
+    display: block;
 }
