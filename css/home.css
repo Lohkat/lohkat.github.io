@@ -1,0 +1,109 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    min-width: 510px;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    /*padding: 1rem;*/
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    /*background-color: red;*/
+
+    flex: 0 0 auto;    
+    padding: 0.2rem 2rem;
+
+    /*border-bottom: 0.4rem black solid;*/
+}
+
+.buttons {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.buttons > div {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr 1fr;
+    gap: 0.25rem;
+    padding: 0.25rem 0;
+    width: 100%;
+    align-self: flex-end;
+}
+
+.buttons > div a {
+    background-color: rgb(201, 201, 201);
+    text-align: center;
+    padding: 0.75rem;
+    border-radius: 0.4rem;
+    white-space: nowrap;
+}
+
+
+header h1 {
+    font-size: 3rem;
+}
+
+main {
+    /*background-color: green;*/
+    flex: 1 0 auto;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+main h2 {
+    padding: 1.2rem 0 0.6rem 0;
+    margin: 0;
+}
+main p {
+    padding: 0.3rem 0 0.15rem 0;
+    margin: 0;
+}
+main .extra-pad {
+    padding: 0 1rem;
+}
+main iframe {
+    width: 100%;
+    height: 18rem;
+}
+
+footer {
+    height: auto;
+    width: 100%;
+    flex: 0 0 auto;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    background-color: rgb(188, 188, 188);
+}
+footer > * {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.hidden {
+    opacity: 0.1;
+    transition: opacity 0.1s ease-in-out;
+}
+.hidden:hover {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
