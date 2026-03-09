@@ -43,6 +43,7 @@ header::before{
 header h1 {
     font-size: 3rem;
     width: fit-content;
+    font-family: var(--font_sb);
     /*border-bottom: 0.25rem white solid;*/
 }
 
