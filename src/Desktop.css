@@ -1,0 +1,6 @@
+.root-desktop {
+    width: 100%;
+    background-color: red;
+    flex: 1 0 auto;
+    background: url("./assets/wallpaper_default.jpg") center/cover no-repeat;
+}
