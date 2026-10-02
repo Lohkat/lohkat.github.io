@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <META NAME="KEYWORDS" CONTENT="html, css, javascript">
+    <meta name="rating" content="general">
+    <meta name="generator" content="VSCode">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="copyright" content="none">
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="author" content="Lohkdesgds Hangi Lhuminury">
+    <meta name="description" content="Lohk's Nest">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" type="image/x-icon" href="/images/icons/self.jpg">
+    
+    <title>Lohk's Nest</title>
+
+    <link rel="stylesheet" href="/deps/css/standard.css">    
+    <script type="text/javascript" src="/deps/js/standard.js" defer></script>
+</head>
+<body>
+    <button class="toggle-dark-mode" state="white"></button>
+    <button class="go-home"></button>
+
+    <section class="ybottom xcenter" style="padding-bottom: 1rem; background-color: var(--sub-bg-color); color: var(--invert-color);">
+        <div type="center-header">
+            <br type="normal" />
+            <h1 class="highlight">How did we get here?</h1>
+            <br type="large"/>
+        </div>
+    </section>
+
+    <section class="ybottom xcenter main">
+        <div type="block" class="doc">
+            <h3>The beginning of Lohk's C++ journey</h3>
+
+            <p>
+                I started my journey with C, learning how to do some tools in console
+                using Windows and CodeBlocks (hard times). MinGW had always bothered me,
+                it never worked as I expected. Even though my start point was not optimal,
+                I learned the "logic" and got to understand better how C worked.
+            </p>
+
+            <p>
+                After spending a lot of time with headers and source files, I got a game to
+                work with Allegro 5 and MinGW 5.x (or something like that). The teacher
+                recommended MinGW 4.8 for some reason, and even for that time, it was very
+                obsolete... Thankfully, my game ran well enough, with very poor map generation,
+                that sometimes just took several seconds to generate, and the performance was
+                also very bad.
+            </p>
+
+            <p>
+                Later that year, I began working on my biggest project yet. I started
+                developing in C++ and I was excited to use C++11 and C++14. C++17 was coming, and,
+                finally, I started using Visual Studio (phew!). The learning curve from C to C++
+                is not that absurd, if you think about it. C++ brings that "attributes with functions"
+                that shines for those crazy enough to think that instances of a class are like living objects.
+                Yes, I dreamed of something like that, like objects in a game with their own threads,
+                thinking by themselves, looking around and interacting with others, asynchronously...
+                I was crazy (yeah, I WAS, of course, yes, hm.)
+            </p>
+
+            <p>
+                Well, for those starting now, don't be ashamed of your weird code, because
+                I was very crazy in the past too. I remember revising a code 5 years later and
+                finding something like this:
+            </p>
+
+            <blockquote type="code">
+                // ... <br />
+                if (my_mutex.try_lock()) <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;my_mutex.unlock(); <br />
+                // ...
+            </blockquote>
+
+            <p>
+                Yes... This does nothing. So... Why does it break if I remove it? Yes, this game
+                I developed with that very piece of code BREAKS if I remove that, somehow. On
+                many different computers, it works just fine, so it's not a timing or core count
+                thing... Back to the timeline though.
+            </p>
+
+            <p>
+                Well, for over 6 years now, I've been developing fancy tools trying to standardize
+                things I created and that I would like to have in newer projects. You can see how this
+                can go wrong, right? Like, "let me implement this system X that I might use in something
+                somewhere someday".
+            </p>
+
+            <p>
+                This was the start of "LSW", or what became Lunaris later on. As I was developing games,
+                I continued using Allegro. I like Allegro 5, and I still use it,
+                but I understand that this is not even close the best option out there. But that's ok.
+                LSW was about modernizing Allegro 5 to work with C++ in a smarter, object-oriented
+                way, with smart destructors, extras (like opening GIFS, sockets - fancy stuff). And I
+                sort of did it.
+            </p>
+
+            <p>
+                The problem is that when you have too much time, you sometimes just let it go and write
+                too much code too. This was in the Covid era, so I had plenty of time, and, yes, you guessed
+                it already. I wrote A LOT OF SOURCE CODE. From just creating a Display to managing menus and
+                submenus, or automatic collision of objects, support for layers, effects written not in GPU 
+                (I still need to learn GLSL or something), but in bare CPU code, with some tricks, of course...
+                My solution was big, revolutionary, fancy, superb. These were my and my colleague's thoughts.
+            </p>
+
+            <p>
+                Now, imagine, you right click the folder just with headers and source code and you see...
+                Wait. Was that like 750 kB of SOURCE CODE? What? How did I manage to almost hit 1 MiB???
+            </p>
+
+            <p>
+                You may look at me and call me crazy, but I was, indeed, very crazy (some say I still am). Somehow, that
+                giant monolith of fancy code worked stupidly well. Like, well enough to run games smoothly
+                even on an 2009 mid laptop in HD! Somehow the logic was good and performed incredibly well.
+                The funny part is that, after doing that once, I did it again, because I started learning
+                new methods and patterns, so, you know... Why not?
+            </p>
+
+            <p>
+                The second "generation", as you may call it, of LSW (technically I called it the 5th version I think),
+                started very strong. I've put templates, fancy C++17 features, threads, variadic arguments,
+                constexpr, all the crazy new sweet features. As Visual Studio is so great at being up to date
+                with things, I was free to do whatever I wanted. The project, once again, became GIANT,
+                but also very powerful and complete. I developed many tools and games in that era just using
+                my "library" around. It was perfect. Or kind of.
+            </p>
+
+            <p>
+                Well, after that, University came back in full force and I had to slow things down for some years.
+                I began studying more about how the world works, not just Windows and simple platform games
+                and GUI applications. I started developing things for real use cases, not just random thoughts.
+            </p>
+
+            <p>
+                So, around 2022, I started really digging it. I wanted my tools to work anywhere, and to be usable
+                by anyone anywhere. I started with Linux and Windows in mind, and split the library onto smaller
+                ones. This was the real beginning of Lunaris!
+            </p>
+
+            <p>
+                Until the end of 2022 I got the barebones working. Instead of adding absurd amounts of features to
+                everything, I started developing smaller code focused in a single problem at a time. This worked for
+                most of what I created, just not for Allegro.
+            </p>
+
+            <p>
+                The problem was that I was using Visual Studio on Windows, and developing for Linux was kind of new to
+                me. Of course, I didn't have much knowledge on the specifics, and so, libraries like Sockets were a pain
+                to develop. Windows and Linux are completely different on some areas.
+                After some studying and testing, I got things stable enough for my taste, but they were all header only.
+            </p>
+
+            <p>
+                Around 2023 I started working at ExxonMobil while still on University. Time was non existent. I dropped
+                some game projects, lost some backups because of WINDOWS BREAKING THINGS, and so on.
+            </p>
+
+            <p>
+                After the completion of the University in the end of 2024, I started once again tweaking things. I tested SFML,
+                SDL3, Allegro again, and CMake to aggregate things together. In 2026, I really started working on projects.
+                I was not just a random guy on the internet anymore, I got the knowledge and experience of a multinational
+                company on my side. I learned how the professionals deploy, work, debug, test, and so on. So the new era began.
+            </p>
+
+            <p>
+                Lunaris is now built with CMake, tested with CTest, deployed in GitHub Pipelines automatically, released on GitHub itself,
+                and not bloated anymore (happy ending!). I am still thinking if I should bring the Allegro C++
+                "port" I made to this, because I got the library to work with CMake flawlessly, with static compilation and
+                automatic builds within GitHub Pipelines too. Maybe this is the year of Lunaris?
+            </p>
+
+            <p>
+                By the way, since the end of 2024 I am a full Linux user. Yes. This changed my way of programming too,
+                because I had to learn how to compile the kernel and download Chrome from terminal (kekw).
+                Jokes aside, my life has been awesome since then, and the development is way better here.
+            </p>
+
+            <p>
+                Let's see what'll happen to me in the future. For now, this is the history of my developer career, at least
+                the most important one: C++! 
+            </p>
+            
+        </div>
+    </section>
+
+    <section class="footer">
+        <h6>Developed and maintained by Lohk himself, 2026</h6>
+    </section>
+
+</body>
+</html>
